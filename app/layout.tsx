@@ -30,9 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-          <div style={{ paddingTop: '4rem' }}>
-            {children}
-          </div>
+          {children}
           <CartDrawer />
         </CartProvider>
       </body>

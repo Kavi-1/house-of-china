@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative overflow-hidden" style={{ height: 'calc(100vh - 4rem)' }}>
+      <div className="relative overflow-hidden" style={{ height: 'calc(100vh)' }}>
         <div className="absolute top-0 left-0 right-0 z-50">
           <Nav />
         </div>
