@@ -1,5 +1,4 @@
 import Nav from "./components/Nav";
-import Image from "next/image";
 import Link from "next/link";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Footer from "./components/Footer";

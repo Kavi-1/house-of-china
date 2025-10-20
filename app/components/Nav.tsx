@@ -81,7 +81,7 @@ export default function Nav() {
 }
 
 // hamburger menu options
-function MobileDropdown({ open, onClose, onSignIn }: { open: boolean; onClose: () => void; onSignIn: () => void }) {
+function MobileDropdown({ open, onClose }: { open: boolean; onClose: () => void; onSignIn: () => void }) {
     if (!open) return null;
     const linkStyle = "block px-4 py-3 text-base font-medium text-white hover:bg-red-600 rounded";
 

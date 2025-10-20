@@ -1,4 +1,6 @@
+"use client"
 import { useState } from "react";
+import Image from 'next/image';
 import { supabase } from '@/lib/supabaseClient';
 import { useCart } from './CartContext';
 
@@ -117,11 +119,12 @@ export default function MenuClient({ menuItems, categories, error }: MenuClientP
             return (
               <section id={`cat-${category}`} key={category} className="mb-8">
                 <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     src={imagePath}
                     alt={category}
-                    onError={(e) => { (e.target as HTMLImageElement).src = '/file.svg' }}
+                    onError={() => { /* fallback handled by browser if desired */ }}
                     className="object-cover w-full h-full z-0"
+                    fill
                   />
                   <div className="absolute inset-0 flex items-stretch justify-start z-10">
                     <div className="h-full w-full flex items-center">
