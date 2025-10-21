@@ -6,4 +6,4 @@ Restaurant ordering platform prototype:
 
 ## Stack 
 
-Next.js • Node.js Typescript • Supabase • PostgreSQL
+Next.js • Node.js • React • TypeScript • Supabase • PostgreSQL
